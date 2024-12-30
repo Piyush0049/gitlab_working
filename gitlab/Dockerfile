@@ -1,7 +1,7 @@
 FROM node
-WORKDIR /usr/src/app
+WORKDIR /app
 COPY package*.json ./
-RUN npm run build
+RUN npm install --legacy-peer-deps
+EXPOSE 5000
 COPY . .
-RUN npm run dev
 CMD [ "npm", "start" ]

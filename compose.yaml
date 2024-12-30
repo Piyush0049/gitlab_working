@@ -1,9 +1,10 @@
 name: mydoc
 
 services:
-  build:
-    context: "./gitlab"
-    dockerfile: dockerfile
-  container_name: gitlab_cont
-  ports:
-    - "3000:3000"
+  mydoc:
+    build:
+      context: "./gitlab"
+      dockerfile: Dockerfile
+    container_name: gitlab_cont
+    ports:
+      - "3000:3000"
