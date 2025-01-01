@@ -1,10 +1,10 @@
-name: mydoc
+version: "3.9"
 
 services:
   mydoc:
-    build:
-      context: "./gitlab"
-      dockerfile: Dockerfile
-    container_name: gitlab_cont
+    image: "piyush0049/node-app:latest"
     ports:
       - "3000:3000"
+
+
+
